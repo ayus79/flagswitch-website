@@ -12,7 +12,7 @@
           Use the Python SDK to evaluate flags in your app. Type-safe, with optional local caching and async support.
         </p>
         <ul class="mt-4 sm:mt-6 space-y-2 sm:space-y-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          <li class="flex items-center gap-2 flex-wrap"><span class="text-brand-500">✓</span> Install with <code class="rounded bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 font-mono text-xs sm:text-sm break-all">pip install flagswitch</code></li>
+          <li class="flex items-center gap-2 flex-wrap"><span class="text-brand-500">✓</span> Install with <code class="rounded bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 font-mono text-xs sm:text-sm break-all">pip install flagswitch-sdk</code></li>
           <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Evaluate flags by user, segment, or percentage</li>
           <li class="flex items-center gap-2"><span class="text-brand-500">✓</span> Works with FastAPI, Django, Flask, and more</li>
         </ul>
@@ -38,9 +38,7 @@ client = FlagSwitch(api_key=<span class="text-amber-300">"your_api_key"</span>)
 <span class="text-zinc-500"># Percentage rollout (e.g. 20% of users)</span>
 <span class="text-purple-400">if</span> client.is_in_rollout(<span class="text-amber-300">"beta_dashboard"</span>, user_id=<span class="text-amber-300">"user_123"</span>, percentage=<span class="text-emerald-400">20</span>):
     show_beta_dashboard()
-
-<span class="text-zinc-500"># Environment-aware (dev / staging / prod)</span>
-client.set_environment(<span class="text-amber-300">"production"</span>)</code></pre>
+</code></pre>
         </div>
       </div>
     </div>
