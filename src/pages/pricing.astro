@@ -2,74 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Link from '../components/BaseLink.astro';
+import Pricing from '../components/Pricing.astro';
 ---
 
 <Layout title="Pricing - Flagswitch" description="Simple, transparent pricing for feature flags. Start free.">
   <Header />
-  <main class="pt-14 sm:pt-16 min-h-[calc(100vh-4rem)] flex flex-col">
-    <section class="flex-1 flex flex-col items-center justify-center py-16 sm:py-20 md:py-28 px-4 sm:px-6">
-      <div class="mx-auto max-w-2xl w-full text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">Pricing</p>
-        <h1 class="mt-3 sm:mt-4 text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
-          Simple, transparent pricing
-        </h1>
-        <p class="mt-4 sm:mt-6 text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
-          Get started for free. No credit card required.
-        </p>
-
-        <div class="mt-10 sm:mt-12 mx-auto max-w-sm">
-          <div class="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-lg overflow-hidden">
-            <div class="px-8 pt-8 pb-6 border-b border-zinc-100 dark:border-zinc-800">
-              <span class="inline-block rounded-full bg-brand-100 dark:bg-brand-900/40 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-700 dark:text-brand-300">Free</span>
-              <div class="mt-4 flex items-end gap-1">
-                <span class="text-5xl font-bold text-zinc-900 dark:text-white">$0</span>
-                <span class="mb-1.5 text-zinc-500 dark:text-zinc-400 text-sm">/ month</span>
-              </div>
-              <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">Everything you need to get started.</p>
-            </div>
-            <ul class="px-8 py-6 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Unlimited feature flags
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Real-time control dashboard
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Up to 1 project
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Up to 3 environments
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Percentage rollouts
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                User management
-              </li>
-              <li class="flex items-center gap-3">
-                <span class="text-brand-500 text-base">✓</span>
-                Python SDK
-              </li>
-            </ul>
-            <div class="px-8 pb-8">
-              <Link
-                href="/#"
-                class="block w-full rounded-lg bg-brand-600 hover:bg-brand-700 px-4 py-3 text-center text-sm font-semibold text-white transition-colors"
-              >
-                Get started free
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <main class="pt-14 sm:pt-16">
+    <div class="mx-auto max-w-2xl px-4 text-center pt-16 sm:pt-20">
+      <p class="text-sm font-semibold uppercase tracking-wider text-brand-600 dark:text-brand-400">Pricing</p>
+      <h1 class="mt-3 text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">
+        Simple, transparent pricing
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-zinc-600 dark:text-zinc-400">
+        Get started for free. No credit card required.
+      </p>
+    </div>
+    <Pricing />
   </main>
   <Footer />
 </Layout>
