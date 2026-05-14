@@ -20,42 +20,14 @@ const tiers = [
     ],
     highlighted: false,
   },
-  {
-    name: 'Pro',
-    description: 'For growing teams that ship often.',
-    price: '$4.99',
-    period: '/month',
-    cta: 'Get started',
-    href: '#',
-    features: [
-      'Everything in Free',
-      '3 projects',
-      '5 environments',
-    ],
-    highlighted: true,
-  },
-  {
-    name: 'Enterprise',
-    description: 'For scale and custom needs.',
-    price: '$9.99',
-    period: '/month',
-    cta: 'Get started',
-    href: '#',
-    features: [
-      'Everything in Pro',
-      'Unlimited projects',
-      'Unlimited environments',
-    ],
-    highlighted: false,
-  },
 ];
 ---
 
 <section id="pricing" class="py-20 sm:py-28">
   <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    <div class="grid gap-8 lg:grid-cols-3 lg:gap-6">
+    <div class="flex justify-center">
       {tiers.map((tier) => (
-        <article class={`relative flex flex-col rounded-2xl border p-8 sm:p-10 ${
+        <article class={`relative flex flex-col rounded-2xl border p-8 sm:p-10 w-full max-w-sm ${
           tier.highlighted
             ? 'border-brand-500 bg-brand-50/50 dark:bg-zinc-800 dark:border-brand-400 shadow-xl shadow-brand-500/10 z-10 scale-[1.02]'
             : 'border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900'
