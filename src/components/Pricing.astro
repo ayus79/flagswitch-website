@@ -6,7 +6,7 @@ const tiers = [
     price: '$0',
     period: '/month',
     cta: 'Get started free',
-    href: '#',
+    href: 'https://flagswitch-frontend.ayushcon2000.workers.dev',
     features: [
       'Unlimited feature flags',
       '1 project',
@@ -45,6 +45,8 @@ const tiers = [
           </div>
           <a
             href={tier.href}
+            target="_blank"
+            rel="noopener noreferrer"
             class={`mt-6 inline-flex justify-center rounded-xl px-4 py-3 text-sm font-semibold transition-colors ${
               tier.highlighted
                 ? 'bg-brand-600 text-white hover:bg-brand-700 dark:bg-brand-500 dark:hover:bg-brand-400'
